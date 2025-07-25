@@ -9,7 +9,7 @@ import { toPersianNumber } from '../lib/helper/helpers';
 
 export default function ProductInfo() {
     return (
-        <div className='max-w-[100%] 2xl:col-span-7 col-span-12 '>
+        <div className='max-w-[100%] 2xl:col-span-8 col-span-12 '>
             <div className='border border-gray-200  rounded-xl p-[16px]  bg-white'>
                 <div className="lg:flex justify-between hidden">
                     <div className='flex gap-10 items-center h-fit flex-wrap lg:flex-nowrap'>
@@ -85,7 +85,7 @@ export default function ProductInfo() {
                         </div>
                         <button className='border hidden lg:block font-bold text-[12px] border-[#97007B] text-[#97007B] rounded-xl cursor-pointer px-[16px] py-[8px]'>انتخاب نحوه ارسال</button>
                     </div>
-                    <div className='  items-center gap-1 pl-[44px] hidden lg:flex'>
+                    <div className='  items-center gap-1 pl-[88px] hidden lg:flex'>
                         <Image src={'/clock.png'} width={22} height={22} alt={''} />
                         <p className='font-bold text-[#343A40] hidden lg:block text-[13px]'>زمان تحویل به شما</p>
                         <p className='text-[12px] hidden lg:block'>تاریخ و ساعت تحویل را مشخص کنید</p>
