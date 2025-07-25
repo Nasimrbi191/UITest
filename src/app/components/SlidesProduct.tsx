@@ -87,7 +87,7 @@ function SlidesProduct() {
                                 <div className='w-[16px] h-[16px] bg-[#fff] border border-[#868E96] rounded'></div>
                                 <span className='text-[12px]'>سفید</span>
                             </div>
-                            <div className='w-[94px] hidden lg:flex max-w-full mt-3 pl-2 pr-1 py-3 flex flex-wrap lg:flex-nowrap gap-2 items-center h-[20px] bg-[#6741D9] rounded-lg text-white'>
+                            <div className='w-[94px] hidden lg:flex max-w-full mt-3 pl-2 pr-1 py-3  flex-wrap lg:flex-nowrap gap-2 items-center h-[20px] bg-[#6741D9] rounded-lg text-white'>
                                 <Image src={'/shield-tick.png'} width={16} height={16} alt={''} />
                                 <span className='text-[12px]'>بیمه</span>
                             </div>
@@ -137,7 +137,7 @@ function SlidesProduct() {
                                 <div className='w-[16px] h-[16px] bg-[#343A40] border border-[#868E96] rounded'></div>
                                 <span className='text-[12px]'>ذغالی</span>
                             </div>
-                            <div className='w-[94px] max-w-full hidden lg:block mt-3 pl-2 pr-1 py-3 flex flex-wrap lg:flex-nowrap gap-2 items-center h-[20px] bg-[#6741D9] rounded-lg text-white'>
+                            <div className='w-[94px] max-w-full hidden lg:flex mt-3 pl-2 pr-1 py-3  flex-wrap lg:flex-nowrap gap-2 items-center h-[20px] bg-[#6741D9] rounded-lg text-white'>
                                 <Image src={'/shield-tick.png'} width={16} height={16} alt={''} />
                                 <span className='text-[12px]'>بیمه</span>
                             </div>
