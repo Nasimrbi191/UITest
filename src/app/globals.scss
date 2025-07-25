@@ -1,7 +1,9 @@
 @import "tailwindcss";
+@import '/src/app/styles/Fonts.scss' ;
 
 body {
   direction: rtl;
+  font-family: 'Vazir';
 }
 
 input {

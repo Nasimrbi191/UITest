@@ -9,22 +9,25 @@ function MobileFacture() {
     const [isDrawerOpen, setIsDrawerOpen] = React.useState(false);
     return (
         <>
-            <div className='p-5 z-[99999] fixed bottom-0 left-0 right-0 bg-white shadow-xl/30'>
-                <div className=' flex gap-5  justify-between '>
-                    <p className='text-[#343A40] text-[13px]'>صورتحساب</p>
-                    <KeyboardArrowDownIcon className='text-[#343A40] text-[13px]' onClick={() => setIsDrawerOpen(true)} />
-                </div>
-                <div className='bg-[#E0E0E0] mx-auto w-[100%] h-[1px] mt-4'></div>
-                <div className='flex gap-2 justify-between'>
-                    <div className='mt-3'>
-                        <button className='bg-[#12B886] text-white py-3 px-5 rounded-lg text-[12px]'>انتخاب نحوه پرداخت</button>
+            {
+                !isDrawerOpen &&
+                <div className='py-[5px] px-[13px] z-[99999] fixed bottom-0 left-0 right-0 bg-white shadow-xl/30'>
+                    <div className=' flex gap-5  justify-between '>
+                        <p className='text-[#343A40] text-[13px]'>صورتحساب</p>
+                        <KeyboardArrowDownIcon className='text-[#343A40] text-[13px]' onClick={() => setIsDrawerOpen(true)} />
                     </div>
-                    <div className='flex justify-between mt-3 flex-col'>
-                        <p className='text-[#343A40] text-[12px]'>مبلغ قابل پرداخت</p>
-                        <p className='text-[#343A40] text-[14px] font-bold'>{toPersianNumber('60,648,018')} تومان</p>
+                    <div className='bg-[#E0E0E0] mx-auto w-[100%] h-[1px] mt-4'></div>
+                    <div className='flex gap-2 justify-between'>
+                        <div className='mt-3'>
+                            <button className='bg-[#12B886] text-white py-3 px-5 rounded-lg text-[12px]'>انتخاب نحوه پرداخت</button>
+                        </div>
+                        <div className='flex justify-between mt-3 flex-col'>
+                            <p className='text-[#343A40] text-[12px]'>مبلغ قابل پرداخت</p>
+                            <p className='text-[#343A40] text-[14px] font-bold'>{toPersianNumber('60,648,018')} تومان</p>
+                        </div>
                     </div>
                 </div>
-            </div>
+            }
             <Drawer
                 open={isDrawerOpen}
                 onClose={() => setIsDrawerOpen(false)}
@@ -106,7 +109,7 @@ function MobileFacture() {
                     </div>
                     <div className="bg-[#E7F5FF] flex gap-4 max-w-[100%] items-center mt-5 py-[12px] px-[24px] w-full h-[72px] rounded-[12px]">
                         <Image src="/Icon 16px.svg" width={16} height={16} alt="" />
-                        <span className="text-[#1C7ED6]">
+                        <span className="text-[#1C7ED6] text-[12px]">
                             ﻫﺰﯾﻨﻪ ارﺳﺎل در اداﻣﻪ ﺑﺎ ﻣﺸﺨﺺ ﺷﺪن آدرس، زﻣﺎن و ﻧﺤﻮه ارﺳﺎل ﻣﺸﺨﺺ و ﺑﻪ ﻫﺰﯾﻨﻪ ﻧﻬﺎﯾﯽ اﺿﺎﻓﻪ ﺧﻮاﻫﺪ ﺷﺪ.
                         </span>
                     </div>
@@ -119,8 +122,8 @@ function MobileFacture() {
                         <p>سفارش بصورت حقوقی ثبت شود</p>
                     </div>
                     <div className="h-[1px] w-full bg-[#DEE2E6] mt-5"></div>
-                    <div className="flex flex-wrap lg:flex-nowrap items-center justify-between mt-5 max-w-[100%]">
-                        <button className="bg-[#12B886] cursor-pointer text-[14px] py-[12px] px-[16px] w-[234.5px] h-[48px] rounded-md text-white">
+                    <div className="flex  items-center justify-between mt-5 max-w-[100%]">
+                        <button className="bg-[#12B886] cursor-pointer text-[12px] py-[12px] px-[25px]  rounded-md text-white">
                             انتخاب نحوه پرداخت
                         </button>
                         <div className="flex flex-col flex-wrap lg:flex-nowrap gap-2">

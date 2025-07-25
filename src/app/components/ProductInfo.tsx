@@ -28,23 +28,28 @@ export default function ProductInfo() {
                 </div>
                 <div className='bg-[#FFF4E6] rounded-[16px] p-[16px] border border-[#F76707]  mt-5'>
                     <div className="flex justify-between flex-wrap lg:flex-nowrap">
-                        <div className='flex gap-5 items-center'>
-                            <div className=" rounded-full flex flex-wrap lg:flex-nowrap items-center justify-center bg-[#ff922b] w-[6px] h-[6px] p-[7px]">
+                        <div className='lg:flex gap-5 hidden items-center'>
+                            <div className=" rounded-full lg:flex flex-wrap lg:flex-nowrap items-center justify-center bg-[#ff922b] w-[6px] h-[6px] p-[7px]">
                                 <CheckIcon className='text-[#F76707] text-white !text-[8px] ' />
                             </div>
-                            <p className='text-[#F76707] font-bold'>ارسال به (عنوان آدرس)</p>
+                            <p className='text-[#F76707] font-bold lg:block hidden'>ارسال به (عنوان آدرس)</p>
+                        </div>
+                        <div className='flex items-center lg:hidden gap-1'>
+                            <Image src={'/building-4.png'} alt='' width={16} height={16} className='block lg:hidden' />
+                            <p className='text-[#F76707] font-bold block lg:hidden'>عنوان نشانی</p>
                         </div>
                         <Image src={'/location-add.svg'} alt='' width={24} height={24} />
                     </div>
                     <div className='flex flex-wrap lg:flex-nowrap gap-2 items-center mt-5'>
                         <Image src={'/Vector.png'} alt='' width={16} height={16} />
                         <p className='text-[#343A40] '>محمدرضا اکبری</p>
+                        <p className='text-[#343A40] text-[12px]'>نام گیرنده</p>
                     </div>
                     <div className='flex gap-2 items-center mt-2'>
                         <Image src={'/Icon 16px.png'} width={16} height={16} alt={''} className='hidden lg:block' />
                         <Image src={'/Icon 16px.png'} width={35} height={35} alt={''} className='lg:hidden block' />
                         <p className='text-[#343A40] lg:block hidden'>تهران, تهران جمالزاده، خیابان آزادی، نرسیده به خیابان قریب، خیابان والعصر، کوچه بزمه / پلاک {toPersianNumber(1434)} / واحد {toPersianNumber(4)}</p>
-                        <p className='text-[#343A40] block lg:hidden'>خراسان رضوی, مشهد، وکیل آباد، بلوار هفت تیر، هفت تیر 11، چهارراه اول، پلاک   {toPersianNumber(13)}، واحد  {toPersianNumber(10)}</p>
+                        <p className='text-[#343A40] block lg:hidden text-[12px]'>خراسان رضوی, مشهد، وکیل آباد، بلوار هفت تیر، هفت تیر 11، چهارراه اول، پلاک   {toPersianNumber(13)}، واحد  {toPersianNumber(10)}</p>
                     </div>
                 </div>
             </div>
@@ -85,7 +90,7 @@ export default function ProductInfo() {
                         </div>
                         <button className='border hidden lg:block font-bold text-[12px] border-[#97007B] text-[#97007B] rounded-xl cursor-pointer px-[16px] py-[8px]'>انتخاب نحوه ارسال</button>
                     </div>
-                    <div className='  items-center gap-1 pl-[88px] hidden lg:flex'>
+                    <div className='  items-center gap-1 hidden lg:flex'>
                         <Image src={'/clock.png'} width={22} height={22} alt={''} />
                         <p className='font-bold text-[#343A40] hidden lg:block text-[13px]'>زمان تحویل به شما</p>
                         <p className='text-[12px] hidden lg:block'>تاریخ و ساعت تحویل را مشخص کنید</p>

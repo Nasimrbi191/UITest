@@ -80,15 +80,15 @@ function SlidesDate() {
                 spaceBetween={5}
                 slidesPerView={3.5}
                 className='items-center DatesDeliverySlides '>
-                <SwiperSlide className='!flex items-center gap-2 border border-[#1C7ED6]  rounded-xl text-[#1C7ED6] p-2'>
+                <SwiperSlide className='!flex items-center gap-1 border border-[#1C7ED6]  rounded-xl text-[#1C7ED6] p-2'>
                     <Image src={'/Success - color fill.png'} width={20} height={20} alt='' />
                     <p className='text-[10px]'>10 الی 14</p>
                 </SwiperSlide>
-                <SwiperSlide className='!flex items-center gap-2 border border-[#FF6B6B]  rounded-xl text-[#FF6B6B] p-2'>
+                <SwiperSlide className='!flex items-center gap-1 border border-[#FF6B6B]  rounded-xl text-[#FF6B6B] p-2'>
                     <Image src={'/Right icon.png'} width={20} height={20} alt='' />
                     <p className='text-[10px]'>18 الی 14</p>
                 </SwiperSlide>
-                <SwiperSlide className='!flex items-center gap-2 border border-[#CED4DA]  rounded-xl  p-2'>
+                <SwiperSlide className='!flex items-center gap-1 border border-[#CED4DA]  rounded-xl  p-2'>
                     <Image src={'/Empty - gray linear.png'} width={20} height={20} alt='' />
                     <p className='text-[10px]'>18 الی 14</p>
                 </SwiperSlide>

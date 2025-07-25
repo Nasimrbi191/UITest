@@ -73,11 +73,11 @@ export default function Facture() {
                         </ul>
                         <div className='mt-5 flex items-center gap-3 max-w-[100%] flex-wrap lg:flex-nowrap'>
                             <input name='coupon' type="text" placeholder='کد تخفیف' className='bg-[#F8F9FA] grow  w-full h-[48px] border border-[#DEE2E6] rounded-md p-2 w-[381px] text-[#ADB5BD]' />
-                            <button type='button' className=' rounded-md border border-[#343A40] py-[12px] 2xl:px-[14px] w-[88px] h-[48px] cursor-pointer'>ثبت کد</button>
+                            <button type='button' className=' rounded-md border border-[#343A40] py-[10px] 2xl:px-[12px] w-[88px] h-[48px] cursor-pointer'>ثبت کد</button>
                         </div>
                         <div className='bg-[#E7F5FF] flex  gap-4 max-w-[100%] items-center mt-5 py-[12px] px-[24px] w-full h-[72px] rounded-[12px]'>
                             <Image src='/Icon 16px.svg' width={16} height={16} alt='' />
-                            <span className='text-[#1C7ED6] '>ﻫﺰﯾﻨﻪ ارﺳﺎل در اداﻣﻪ ﺑﺎ ﻣﺸﺨﺺ ﺷﺪن آدرس، زﻣﺎن و ﻧﺤﻮه ارﺳﺎل ﻣﺸﺨﺺ و ﺑﻪ ﻫﺰﯾﻨﻪ ﻧﻬﺎﯾﯽ اﺿﺎﻓﻪ ﺧﻮاﻫﺪ ﺷﺪ.</span>
+                            <span className='text-[#1C7ED6] text-[11px]'>ﻫﺰﯾﻨﻪ ارﺳﺎل در اداﻣﻪ ﺑﺎ ﻣﺸﺨﺺ ﺷﺪن آدرس، زﻣﺎن و ﻧﺤﻮه ارﺳﺎل ﻣﺸﺨﺺ و ﺑﻪ ﻫﺰﯾﻨﻪ ﻧﻬﺎﯾﯽ اﺿﺎﻓﻪ ﺧﻮاﻫﺪ ﺷﺪ.</span>
                         </div>
                         <div className='flex gap-2 flex-wrap lg:flex-nowrap items-center mt-5 max-w-[100%]'>
                             <input type="checkbox" name="checkbox" id="" />
@@ -89,7 +89,7 @@ export default function Facture() {
                         </div>
                         <div className='h-[1px] w-full bg-[#DEE2E6] mt-5'></div>
                         <div className='flex flex-wrap lg:flex-nowrap items-center justify-between mt-5 max-w-[100%]'>
-                            <button className='bg-[#12B886] cursor-pointer text-[14px] py-[12px] px-[16px] w-[234.5px] h-[48px] rounded-md text-white'>
+                            <button className='bg-[#12B886] cursor-pointer text-[12px] py-[11px] px-[10px] w-[174px]  rounded-md text-white'>
                                 انتخاب نحوه پرداخت
                             </button>
                             <div className='flex flex-col flex-wrap lg:flex-nowrap gap-2'>
